@@ -1,0 +1,10 @@
+{
+  "name": "проект2",
+  "authors": [
+    "Natasha Hivoyno <gnch.ru@mail.ru>"
+  ],
+  "dependencies": {
+    "jquery": "1.8",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
