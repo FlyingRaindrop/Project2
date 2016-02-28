@@ -1,0 +1,18 @@
+mixin nav(className, items, activeIndex)
+	nav(class=className)
+		ul(class="#{className}__list")
+			each item, index in items
+				li(class="#{className}__item" + ((activeIndex == index) ? " active" : ''))
+					a(href="#" class="#{className}__link")= item
+
+mixin link-list(className, items, activeIndex)
+	ul(class="#{className}__list")
+		each item, index in items
+			li(class="#{className}__item" + ((activeIndex == index) ? " active" : ''))
+				a(href="#" class="#{className}__link")= item
+
+mixin list(className, items, activeIndex)
+	ul(class="#{className}__list")
+		each item, index in items
+			li(class="#{className}__item" + ((activeIndex == index) ? " active" : ''))
+				a(href="#" class="#{className}__link " + "#{className}__link_#{item}")

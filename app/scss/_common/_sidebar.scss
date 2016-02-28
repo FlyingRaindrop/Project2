@@ -1,0 +1,235 @@
+$colorContent: #fbfbfb;
+$colorSidebar: #5d656c;
+$colorSdbActive: #d9e5ea;
+$colorBorder: #dee1e4;
+$colorReset: #5db2fc;
+.sidebar{
+	float: left;
+}
+.sidebar__wrap{
+	margin-bottom: 39px;
+	background-color: $colorContent;
+	max-width: 333px;
+	border-radius: 5px;
+	border: 1px $colorBorder solid;
+	overflow: hidden;
+}
+.sidebar__list{
+	border-radius: 4px;
+	padding: 0;
+	margin: 0;
+}
+.sidebar__link{
+	font-family: "opensans-regular";
+	font-size: 14px;
+	display: block;
+	box-sizing: border-box;
+	padding: 13px 30px;
+	text-decoration: none;
+	color: $colorSidebar;
+}
+.sidebar__item{
+	border-bottom: 1px $colorBorder solid;
+	&:last-child{
+		border-bottom: none;
+	}
+}
+.sidebar__item.active{
+	.sidebar__link{
+		background-color: $colorSdbActive;
+		border-radius: 0 0 5px 5px;
+	}
+}
+.sidebar__name{
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: $colorSocials;
+	font-size: 16px;
+	font-family: "opensans-semibold";
+	padding: 14px 30px;
+	margin-bottom: 4px;
+}
+.sidebar__content{
+	// margin-bottom: 20px;
+	margin-left: 30px;
+}
+.accordion__list{
+	padding: 0;
+}
+.accordion__item{
+	margin-bottom: 20px;
+}
+.accordion__field{
+	outline: none;
+}
+.accordion__label{
+	font-size: 14px;
+	font-family: "opensans-regular";
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.accordion__price{
+	outline: none;
+}
+.accordion__reset{
+	font-size: 14px;
+	font-family: "opensans-regular";
+	color: $colorReset;
+	margin-bottom: 20px;
+  display: block;
+}
+.accordion__color{
+	display: inline-block;
+	border: 1px $colorBorder solid;
+	margin-right: 17px;
+	margin-bottom: 17px;
+}
+.accordion__color-link{
+	display: block;
+	width: 39px;
+	height: 36px;
+}
+
+$colors: #cccccc #000 #0a3153 #ff1800 #fff343 #fb914a #92c37c #40a6ff #9870ad #dc78ad #7f401d;
+$i:0;
+
+@each $color in $colors{
+	$i: $i + 1;
+		.accordion__color-link_item#{$i}{
+			background: $color;
+		}
+}
+.accordion__color-link{
+	overflow: hidden;
+	&:active{
+		border: 2px $colorOrange solid;
+		border-radius: 2px;
+	}
+}
+
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.accordion__field_check {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.accordion__field_check + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.accordion__field_check:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.accordion__field_check:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 30px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.accordion__field_check:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: $colorBorder;
+}
+/* Меняем фон чекбокса, когда он включен. */
+.accordion__field_check:checked + label:before {
+  background: $colorOrange;
+  background-image: url(../../images/icons/checkbox.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.accordion__field_check:checked + label:hover:before{
+	background-image: url(../../images/icons/checkbox.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.accordion__field_check:not(checked) + label:hover:before{
+	background-image: url(../../images/icons/checkbox-hover.png);
+	background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+// radiobuttons
+/* Cначала обозначаем стили для IE8 и более старых версий*/
+.accordion__field_radio {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.accordion__field_radio + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.accordion__field_radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.accordion__field_radio:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 30px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.accordion__field_radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  top: -2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px $colorBorder solid;
+  background: $colorContent;
+}
+/* Меняем фон чекбокса, когда он включен. */
+.accordion__field_radio:checked + label:before {
+  border: 3px $colorOrange solid;
+  background-image: url(../../images/icons/radio-hover.png);
+  background-position: 2.9px 2.9px;
+  background-repeat: no-repeat;
+}
+.accordion__field_radio:not(checked) + label:hover:before{
+	background-image: url(../../images/icons/radio-hover.png);
+	background-position: 2.9px 2.9px;
+  background-repeat: no-repeat;
+}
+.accordion__price{
+	box-sizing: border-box;
+	width: 82px;
+	border: 1px $colorBorder solid;
+	border-radius: 4px;
+	padding: 5px 10px;
+	font-size: 14px;
+}
+.accordion__item_lower-price{
+	float: left;
+	margin-bottom: 20px;
+}
+.accordion__item_upper-price{
+	float: right;
+	margin-right: 30px;
+}

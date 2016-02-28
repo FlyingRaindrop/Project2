@@ -1,0 +1,44 @@
+//.socials__link {
+//	display: block;
+//	//transition: background-image .3s;
+//}
+//
+
+// @mixin get-sprite($map, $icon) {
+// 	$sprite-image: sprite-file($map, $icon);
+// 	$sprite-url: sprite-url($map);
+// 	$sprite-position: sprite-position($map, $icon);
+
+// 	background: $sprite-url $sprite-position no-repeat;
+
+// 	$sprite-height: image-height($sprite-image);
+// 	$sprite-width: image-width($sprite-image);
+
+// 	width: $sprite-width;
+// 	height: $sprite-height;
+// }
+
+
+// $map: sprite-map('../../images/socicons/*.png');
+// $socials: vk, fb, tw;
+
+// // $hovers: sprite-map('hover/*.png', $spacing: 70px);
+
+// @each $icon in $socials {
+// 	.socicons__link_#{$icon} {
+// 		@include get-sprite($map, $icon);
+
+// 		// &:hover {
+// 		// 	@include get-sprite($hovers, $icon);
+// 		// }
+// 	}
+// }
+
+
+
+
+// @import "compass";
+
+// @import "../../images/socicons/*.png";
+
+// @include all-socicons-sprites;

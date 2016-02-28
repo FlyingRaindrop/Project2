@@ -1,0 +1,11 @@
+.sorting
+	.sorting-wrap.clearfix
+		.select
+			.select__field
+				span.sorting__label Сортировать по
+				a.select__toggle(href="#")
+					span.select__name по цене
+		.catalog-view.clerfix
+			span.sorting__label Вид каталога
+			-var catalogViews=['table','grid','list']
+			+list('catalog-view', catalogViews)

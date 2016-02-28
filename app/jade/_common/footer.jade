@@ -1,0 +1,22 @@
+footer.footer
+	.footer-wrap
+		.container.clearfix
+			.footer__top.clearfix
+				.footer__left.clearfix
+					.logo
+						a.logo__link(href="/")
+							img.logo__img(title="Логотип сайта", alt="Логотип сайта", src="images/content/logo-footer.png")
+							span.logo__header COOLTECH
+				.footer__right.clearfix
+					.socicons
+						- var socials = ['vk', 'fb', 'tw']
+						+list('socicons', socials)
+					.nav-wrap
+						- var footerLinks=['Планшеты','Мобильные телефоны','Мр3 плееры','Персональные компьютеры','Ноутбуки','Аксессуары','Бытовая техника']
+						+link-list('footer-nav', footerLinks)
+
+	.footer__bottom
+		.container
+			.copyright-wrap
+				span.copyright-item All rights reserved. 2016. no copy alowed
+

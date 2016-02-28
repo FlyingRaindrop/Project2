@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		include _common/head.jade
+		link(rel="stylesheet", href="css/_layout/style.css") 
+	body
+		.wrapper
+			.page
+				include _common/_mixins.jade
+				include _common/header.jade
+				include _common/mainNav.jade
+				.content.clearfix
+					.container
+						include _common/breadcrumbs.jade
+						include _common/sidebar.jade
+						.right-content
+							include _common/select.jade
+							block content
+							include _common/pages.jade
+						include _common/mainInfo.jade
+			include _common/footer.jade
+
+
+

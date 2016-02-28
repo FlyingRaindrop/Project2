@@ -1,8 +1,8 @@
 Инструкция по установке моего приложения:
 
-git clone https://github.com/FlyingRaindrop/site2.git
+git clone https://github.com/FlyingRaindrop/Project2.git
 
-cd site2
+cd Project2
 
 bower i
 
