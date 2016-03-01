@@ -1,0 +1,119 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-checkbox-hover {
+  background-image: url(sprite.png);
+  background-position: -22px -47px;
+  width: 13px;
+  height: 10px;
+}
+.icon-checkbox {
+  background-image: url(sprite.png);
+  background-position: -31px -32px;
+  width: 13px;
+  height: 10px;
+}
+.icon-grid-hover {
+  background-image: url(sprite.png);
+  background-position: -32px -16px;
+  width: 16px;
+  height: 16px;
+}
+.icon-grid {
+  background-image: url(sprite.png);
+  background-position: -16px 0px;
+  width: 16px;
+  height: 16px;
+}
+.icon-list-hover {
+  background-image: url(sprite.png);
+  background-position: 0px -16px;
+  width: 16px;
+  height: 16px;
+}
+.icon-list {
+  background-image: url(sprite.png);
+  background-position: -16px -16px;
+  width: 16px;
+  height: 16px;
+}
+.icon-map {
+  background-image: url(sprite.png);
+  background-position: 0px -47px;
+  width: 12px;
+  height: 16px;
+}
+.icon-radio-hover {
+  background-image: url(sprite.png);
+  background-position: -48px -47px;
+  width: 9px;
+  height: 9px;
+}
+.icon-rouble {
+  background-image: url(sprite.png);
+  background-position: -12px -47px;
+  width: 10px;
+  height: 16px;
+}
+.icon-small-toggle-hide {
+  background-image: url(sprite.png);
+  background-position: -35px -47px;
+  width: 13px;
+  height: 9px;
+}
+.icon-small-toggle-show {
+  background-image: url(sprite.png);
+  background-position: -48px -38px;
+  width: 13px;
+  height: 9px;
+}
+.icon-star-active {
+  background-image: url(sprite.png);
+  background-position: 0px -32px;
+  width: 16px;
+  height: 15px;
+}
+.icon-star {
+  background-image: url(sprite.png);
+  background-position: -16px -32px;
+  width: 15px;
+  height: 15px;
+}
+.icon-table-hover {
+  background-image: url(sprite.png);
+  background-position: -32px 0px;
+  width: 16px;
+  height: 16px;
+}
+.icon-table {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 16px;
+  height: 16px;
+}
+.icon-telephone {
+  background-image: url(sprite.png);
+  background-position: -48px -22px;
+  width: 12px;
+  height: 16px;
+}
+.icon-toggle-hide {
+  background-image: url(sprite.png);
+  background-position: -48px -11px;
+  width: 18px;
+  height: 11px;
+}
+.icon-toggle-show {
+  background-image: url(sprite.png);
+  background-position: -48px 0px;
+  width: 18px;
+  height: 11px;
+}

@@ -9,6 +9,7 @@
 	width: $selectWidth +4;
 }
 .products__item{
+	position: relative;
 	box-sizing: border-box;
 	overflow: hidden;
 	padding: 20px 24px;
@@ -119,11 +120,11 @@
 }
 .products__item-stars{
 	display: inline-block;
-	background-image: url(../../images/icons/star-active.png);
+	// background-image: url(../../images/icons/star-active.png);
 	width: 14px;
 	height: 14px;
 	&:last-child{
-		background-image: url(../../images/icons/star.png);
+		// background-image: url(../../images/icons/star.png);
 	}
 }
 .products__rating-number{
@@ -156,16 +157,14 @@
 	font-size: 20px;
 	font-family: "opensans-semibold";
 	&:after{
- 		content: 'Р';
-    font-size: 19px;
+ 		content: ' ';
     display: inline-block;
-    // font-family: rouble;
     margin-left: 6px;
+    background-image: url(../../images/icons/rouble.png);
+    width: 10px;
+    height: 16px;
+    background-position: center center;
 	}
-}
- 
-.products__purchase{
-	vertical-align: bottom;
 }
 .products__purchase-button {
 	margin-bottom: 10px;
@@ -196,9 +195,9 @@
 	}
 }
 .products__purchase{
-	position: relative;
-  left: 0;
-  bottom: 0;
+	position: absolute;
+  right: 22px;
+  bottom: 18px;
 }
 
 // =======================End Section#1============================
@@ -308,7 +307,11 @@
 	margin-top: 10px;
 	margin-left: 10px;
 }
-
+.products__purchase_grid{
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
 // =======================End Section#2============================
 
 // =======================Section#3================================
@@ -346,6 +349,7 @@
 .products__purchase_list-view{
 	width: 295px;
 	margin: 0;
+	position: static;
 }
 .products__purchase-text_list-view{
 	float: left;
@@ -362,6 +366,7 @@
 	margin-top: 2px;
 }
 .products__text_list-view{
+	display: block;
 	color: #000;
 	text-overflow: ellipsis;
 	white-space: nowrap;

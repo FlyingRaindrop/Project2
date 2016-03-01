@@ -8,9 +8,9 @@ footer.footer
 							img.logo__img(title="Логотип сайта", alt="Логотип сайта", src="images/content/logo-footer.png")
 							span.logo__header COOLTECH
 				.footer__right.clearfix
-					.socicons
-						- var socials = ['vk', 'fb', 'tw']
-						+list('socicons', socials)
+					.footer-socicons
+						- var socials = ['fb', 'vk', 'tw']
+						+list('footer-socicons', socials)
 					.nav-wrap
 						- var footerLinks=['Планшеты','Мобильные телефоны','Мр3 плееры','Персональные компьютеры','Ноутбуки','Аксессуары','Бытовая техника']
 						+link-list('footer-nav', footerLinks)

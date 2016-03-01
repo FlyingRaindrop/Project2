@@ -11,7 +11,8 @@ var gulp = require('gulp'),
 	  rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     jade = require('gulp-jade');
-var compass = require('gulp-simple-compass');
+var compass = require('gulp-compass');
+var spritesmith = require('gulp.spritesmith');
 
 var vinyl = require('./vinyl.js');
 
@@ -22,8 +23,8 @@ gulp.task('default', function(){
     .pipe(rename("bundle.min.css"))
     .pipe(notify("Done!"))
     .pipe(gulp.dest('dist'));
-  gulp.src('app/scss/**/*.scss')
-    .pipe(compass());
+  // gulp.src('app/scss/**/*.scss')
+  //   .pipe(compass());
 });
 
 // СБОРКА
@@ -49,7 +50,7 @@ gulp.task('watch', function(){
     'app/css/**/*.css',
     ]).on('change',browserSync.reload);
   gulp.watch('app/jade/**/*.jade', ['jade']);
-  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/scss/**/*.scss', ['sass', 'compass']);
 });
 
 gulp.task('default', ['server','watch']);
@@ -84,3 +85,29 @@ gulp.task('sass:watch', function () {
   gulp.watch('app/scss/**/*.scss', ['sass']);
 });
 
+gulp.task('compass', function() {
+  gulp.src('app/scss/**/*.scss')
+    .pipe(compass({
+      config_file: 'app/scss/config.rb',
+      css: 'app/css',
+      sass: 'app/scss',
+      sourcemap: true
+    }))
+    .pipe(gulp.dest('app/css'));
+});
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('app/images/socicons/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.scss'
+  }));
+  return spriteData.pipe(gulp.dest('app/images/sprites'));
+});
+
+gulp.task('sprite-icons', function () {
+  var spriteData = gulp.src('app/images/icons/*.png').pipe(spritesmith({
+    imgName: 'sprite-icons.png',
+    cssName: 'sprite-icons.scss'
+  }));
+  return spriteData.pipe(gulp.dest('app/images/sprites'));
+});

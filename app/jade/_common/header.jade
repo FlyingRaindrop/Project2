@@ -3,14 +3,12 @@ header.header
 		.container.clearfix
 			.top-wrap.clearfix
 				.socicons
-					- var socials = ['vk', 'fb', 'tw']
+					- var socials = ['fb', 'vk', 'tw']
 					+list('socicons', socials)
 				.tel
-					.tel__icon
-					.tel__item +7 (921) 123-12-13
+					a.tel__item(href="tel:+79211231213") +7 (921) 123-12-13
 				.address
-					.address__icon
-					.address__item ул. Маяковская 6, офис 17
+					a.address__item(href="#") ул. Маяковская 6, офис 17
 	.header__bottom
 		.container.clearfix
 			.bottom-wrap.clearfix

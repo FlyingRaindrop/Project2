@@ -1,0 +1,276 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$checkbox-hover-name: 'checkbox-hover';
+$checkbox-hover-x: 22px;
+$checkbox-hover-y: 47px;
+$checkbox-hover-offset-x: -22px;
+$checkbox-hover-offset-y: -47px;
+$checkbox-hover-width: 13px;
+$checkbox-hover-height: 10px;
+$checkbox-hover-total-width: 66px;
+$checkbox-hover-total-height: 63px;
+$checkbox-hover-image: 'sprite-icons.png';
+$checkbox-hover: (22px, 47px, -22px, -47px, 13px, 10px, 66px, 63px, 'sprite-icons.png', 'checkbox-hover', );
+$checkbox-name: 'checkbox';
+$checkbox-x: 31px;
+$checkbox-y: 32px;
+$checkbox-offset-x: -31px;
+$checkbox-offset-y: -32px;
+$checkbox-width: 13px;
+$checkbox-height: 10px;
+$checkbox-total-width: 66px;
+$checkbox-total-height: 63px;
+$checkbox-image: 'sprite-icons.png';
+$checkbox: (31px, 32px, -31px, -32px, 13px, 10px, 66px, 63px, 'sprite-icons.png', 'checkbox', );
+$grid-hover-name: 'grid-hover';
+$grid-hover-x: 32px;
+$grid-hover-y: 16px;
+$grid-hover-offset-x: -32px;
+$grid-hover-offset-y: -16px;
+$grid-hover-width: 16px;
+$grid-hover-height: 16px;
+$grid-hover-total-width: 66px;
+$grid-hover-total-height: 63px;
+$grid-hover-image: 'sprite-icons.png';
+$grid-hover: (32px, 16px, -32px, -16px, 16px, 16px, 66px, 63px, 'sprite-icons.png', 'grid-hover', );
+$grid-name: 'grid';
+$grid-x: 16px;
+$grid-y: 0px;
+$grid-offset-x: -16px;
+$grid-offset-y: 0px;
+$grid-width: 16px;
+$grid-height: 16px;
+$grid-total-width: 66px;
+$grid-total-height: 63px;
+$grid-image: 'sprite-icons.png';
+$grid: (16px, 0px, -16px, 0px, 16px, 16px, 66px, 63px, 'sprite-icons.png', 'grid', );
+$list-hover-name: 'list-hover';
+$list-hover-x: 0px;
+$list-hover-y: 16px;
+$list-hover-offset-x: 0px;
+$list-hover-offset-y: -16px;
+$list-hover-width: 16px;
+$list-hover-height: 16px;
+$list-hover-total-width: 66px;
+$list-hover-total-height: 63px;
+$list-hover-image: 'sprite-icons.png';
+$list-hover: (0px, 16px, 0px, -16px, 16px, 16px, 66px, 63px, 'sprite-icons.png', 'list-hover', );
+$list-name: 'list';
+$list-x: 16px;
+$list-y: 16px;
+$list-offset-x: -16px;
+$list-offset-y: -16px;
+$list-width: 16px;
+$list-height: 16px;
+$list-total-width: 66px;
+$list-total-height: 63px;
+$list-image: 'sprite-icons.png';
+$list: (16px, 16px, -16px, -16px, 16px, 16px, 66px, 63px, 'sprite-icons.png', 'list', );
+$map-name: 'map';
+$map-x: 0px;
+$map-y: 47px;
+$map-offset-x: 0px;
+$map-offset-y: -47px;
+$map-width: 12px;
+$map-height: 16px;
+$map-total-width: 66px;
+$map-total-height: 63px;
+$map-image: 'sprite-icons.png';
+$map: (0px, 47px, 0px, -47px, 12px, 16px, 66px, 63px, 'sprite-icons.png', 'map', );
+$radio-hover-name: 'radio-hover';
+$radio-hover-x: 48px;
+$radio-hover-y: 47px;
+$radio-hover-offset-x: -48px;
+$radio-hover-offset-y: -47px;
+$radio-hover-width: 9px;
+$radio-hover-height: 9px;
+$radio-hover-total-width: 66px;
+$radio-hover-total-height: 63px;
+$radio-hover-image: 'sprite-icons.png';
+$radio-hover: (48px, 47px, -48px, -47px, 9px, 9px, 66px, 63px, 'sprite-icons.png', 'radio-hover', );
+$rouble-name: 'rouble';
+$rouble-x: 12px;
+$rouble-y: 47px;
+$rouble-offset-x: -12px;
+$rouble-offset-y: -47px;
+$rouble-width: 10px;
+$rouble-height: 16px;
+$rouble-total-width: 66px;
+$rouble-total-height: 63px;
+$rouble-image: 'sprite-icons.png';
+$rouble: (12px, 47px, -12px, -47px, 10px, 16px, 66px, 63px, 'sprite-icons.png', 'rouble', );
+$small-toggle-hide-name: 'small-toggle-hide';
+$small-toggle-hide-x: 35px;
+$small-toggle-hide-y: 47px;
+$small-toggle-hide-offset-x: -35px;
+$small-toggle-hide-offset-y: -47px;
+$small-toggle-hide-width: 13px;
+$small-toggle-hide-height: 9px;
+$small-toggle-hide-total-width: 66px;
+$small-toggle-hide-total-height: 63px;
+$small-toggle-hide-image: 'sprite-icons.png';
+$small-toggle-hide: (35px, 47px, -35px, -47px, 13px, 9px, 66px, 63px, 'sprite-icons.png', 'small-toggle-hide', );
+$small-toggle-show-name: 'small-toggle-show';
+$small-toggle-show-x: 48px;
+$small-toggle-show-y: 38px;
+$small-toggle-show-offset-x: -48px;
+$small-toggle-show-offset-y: -38px;
+$small-toggle-show-width: 13px;
+$small-toggle-show-height: 9px;
+$small-toggle-show-total-width: 66px;
+$small-toggle-show-total-height: 63px;
+$small-toggle-show-image: 'sprite-icons.png';
+$small-toggle-show: (48px, 38px, -48px, -38px, 13px, 9px, 66px, 63px, 'sprite-icons.png', 'small-toggle-show', );
+$star-active-name: 'star-active';
+$star-active-x: 0px;
+$star-active-y: 32px;
+$star-active-offset-x: 0px;
+$star-active-offset-y: -32px;
+$star-active-width: 16px;
+$star-active-height: 15px;
+$star-active-total-width: 66px;
+$star-active-total-height: 63px;
+$star-active-image: 'sprite-icons.png';
+$star-active: (0px, 32px, 0px, -32px, 16px, 15px, 66px, 63px, 'sprite-icons.png', 'star-active', );
+$star-name: 'star';
+$star-x: 16px;
+$star-y: 32px;
+$star-offset-x: -16px;
+$star-offset-y: -32px;
+$star-width: 15px;
+$star-height: 15px;
+$star-total-width: 66px;
+$star-total-height: 63px;
+$star-image: 'sprite-icons.png';
+$star: (16px, 32px, -16px, -32px, 15px, 15px, 66px, 63px, 'sprite-icons.png', 'star', );
+$table-hover-name: 'table-hover';
+$table-hover-x: 32px;
+$table-hover-y: 0px;
+$table-hover-offset-x: -32px;
+$table-hover-offset-y: 0px;
+$table-hover-width: 16px;
+$table-hover-height: 16px;
+$table-hover-total-width: 66px;
+$table-hover-total-height: 63px;
+$table-hover-image: 'sprite-icons.png';
+$table-hover: (32px, 0px, -32px, 0px, 16px, 16px, 66px, 63px, 'sprite-icons.png', 'table-hover', );
+$table-name: 'table';
+$table-x: 0px;
+$table-y: 0px;
+$table-offset-x: 0px;
+$table-offset-y: 0px;
+$table-width: 16px;
+$table-height: 16px;
+$table-total-width: 66px;
+$table-total-height: 63px;
+$table-image: 'sprite-icons.png';
+$table: (0px, 0px, 0px, 0px, 16px, 16px, 66px, 63px, 'sprite-icons.png', 'table', );
+$telephone-name: 'telephone';
+$telephone-x: 48px;
+$telephone-y: 22px;
+$telephone-offset-x: -48px;
+$telephone-offset-y: -22px;
+$telephone-width: 12px;
+$telephone-height: 16px;
+$telephone-total-width: 66px;
+$telephone-total-height: 63px;
+$telephone-image: 'sprite-icons.png';
+$telephone: (48px, 22px, -48px, -22px, 12px, 16px, 66px, 63px, 'sprite-icons.png', 'telephone', );
+$toggle-hide-name: 'toggle-hide';
+$toggle-hide-x: 48px;
+$toggle-hide-y: 11px;
+$toggle-hide-offset-x: -48px;
+$toggle-hide-offset-y: -11px;
+$toggle-hide-width: 18px;
+$toggle-hide-height: 11px;
+$toggle-hide-total-width: 66px;
+$toggle-hide-total-height: 63px;
+$toggle-hide-image: 'sprite-icons.png';
+$toggle-hide: (48px, 11px, -48px, -11px, 18px, 11px, 66px, 63px, 'sprite-icons.png', 'toggle-hide', );
+$toggle-show-name: 'toggle-show';
+$toggle-show-x: 48px;
+$toggle-show-y: 0px;
+$toggle-show-offset-x: -48px;
+$toggle-show-offset-y: 0px;
+$toggle-show-width: 18px;
+$toggle-show-height: 11px;
+$toggle-show-total-width: 66px;
+$toggle-show-total-height: 63px;
+$toggle-show-image: 'sprite-icons.png';
+$toggle-show: (48px, 0px, -48px, 0px, 18px, 11px, 66px, 63px, 'sprite-icons.png', 'toggle-show', );
+$spritesheet-width: 66px;
+$spritesheet-height: 63px;
+$spritesheet-image: 'sprite-icons.png';
+$spritesheet-sprites: ($checkbox-hover, $checkbox, $grid-hover, $grid, $list-hover, $list, $map, $radio-hover, $rouble, $small-toggle-hide, $small-toggle-show, $star-active, $star, $table-hover, $table, $telephone, $toggle-hide, $toggle-show, );
+$spritesheet: (66px, 63px, 'sprite-icons.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../../images/sprites/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

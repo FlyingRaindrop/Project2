@@ -1,0 +1,180 @@
+@import "../../images/sprites/sprite.scss";
+@import "../../images/sprites/sprite-icons.scss";
+$urlSprite: '../../images/sprites/';
+
+// ==========Social icons===========
+.socicons__link{
+	display: block;
+}
+.socicons__link_tw{
+	@include sprite($tw);
+	background-position: -15px -42px;
+	margin-left: 4px;
+	margin-top: 6px;
+	&:hover{
+		@include sprite($tw-hover);
+	}
+}
+.socicons__link_fb{
+	@include sprite($fb);
+	margin-left: 9px;
+	margin-top: 6px;
+	&:hover{
+		@include sprite($fb-hover);
+	}
+}
+.socicons__link_vk{
+	@include sprite($vk);
+	margin-left: 9px;
+	margin-top: 7px;
+	&:hover{
+		@include sprite($vk-hover);
+	}
+}
+
+.footer-socicons__link{
+	display: block;
+}
+.footer-socicons__link_tw{
+	@include sprite($tw-footer);
+	margin-left: 9px;
+	margin-top: 10px;
+	&:hover{
+		@include sprite($tw-footer-hover);
+	}
+}
+.footer-socicons__link_fb{
+	@include sprite($fb-footer);
+	margin-left: 16px;
+	margin-top: 10px;
+	&:hover{
+		@include sprite($fb-footer-hover);
+	}
+}
+.footer-socicons__link_vk{
+	@include sprite($vk-footer);
+	margin-left: 14px;
+	margin-top: 10px;
+	&:hover{
+		@include sprite($vk-footer-hover);
+	}
+}
+
+
+// =========Icons=========
+.tel__item{
+	text-decoration: none;
+	color:#333333;
+	&:before{
+		content: ' ';
+		@include sprite($telephone);
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    right: 5px;
+	}
+}
+
+.address__item{
+	text-decoration: none;
+	color:#333333;
+	&:before{
+		content: ' ';
+		@include sprite($map);
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    right: 5px;
+	}
+}
+.sidebar__item{
+	position: relative;
+}
+.sidebar__name{
+	&:hover:after{
+		content: ' ';
+		@include sprite($toggle-hide);
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 13px;
+	}
+		&:active{
+			background-color: #d9e5ea;
+			&:after{
+				content: ' ';
+				@include sprite($toggle-show);
+		    display: inline-block;
+		    position: absolute;
+		    top: 20px;
+		    right: 13px;
+			}
+		}
+}
+.select__name{
+	position: relative;
+	&:after{
+		content: ' ';
+		@include sprite($small-toggle-show);
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    right: 6px;
+	}
+	&:active:after{
+		content: ' ';
+		@include sprite($small-toggle-hide);
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    right: 6px;
+	}
+}
+.catalog-view__link_table{
+	@include sprite($table);
+	// margin-left: 16px;
+	// margin-top: 10px;
+	
+	&:hover{
+		@include sprite($table-hover);
+	}
+	&:active{
+		@include sprite($table-hover);
+	}
+}
+.catalog-view__link{
+	// margin-right: 19px;
+	&:first-child{
+
+	}
+}
+.catalog-view__link_grid{
+	@include sprite($grid);
+	// margin-left: 16px;
+	// margin-top: 10px;
+	
+	&:hover{
+		@include sprite($grid-hover);
+	}
+	&:active{
+		@include sprite($grid-hover);
+	}
+}
+.catalog-view__link_list{
+	@include sprite($list);
+	// margin-left: 16px;
+	// margin-top: 10px;
+	
+	&:hover{
+		@include sprite($list-hover);
+	}
+	&:active{
+		@include sprite($list-hover);
+	}
+}
+.products__item-stars{
+	@include sprite($star-active);
+	&:last-child{
+		@include sprite($star);
+	}
+}

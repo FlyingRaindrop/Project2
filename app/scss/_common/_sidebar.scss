@@ -101,8 +101,9 @@ $i:0;
 		}
 }
 .accordion__color-link{
+	border: 2px transparent solid;
 	overflow: hidden;
-	&:active{
+	&:hover{
 		border: 2px $colorOrange solid;
 		border-radius: 2px;
 	}
@@ -232,4 +233,29 @@ $i:0;
 .accordion__item_upper-price{
 	float: right;
 	margin-right: 30px;
+}
+//===================Slider====================
+
+.ui-slider{
+	float: left;
+	margin-bottom: 30px;
+	background: #dee1e4;
+	height: 3px;
+	width: 275px;
+}
+.ui-slider-range{
+	height: 3px;
+	width: 275px;
+	// background-color: #f60;
+}
+.ui-slider-handle:before{
+	content: '';
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	margin-left: .3em;
+	background-image: url(../../images/icons/slider.png);
+	width: 8px;
+	height: 14px;
+	cursor: pointer;
 }
