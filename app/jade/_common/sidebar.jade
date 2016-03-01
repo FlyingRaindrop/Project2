@@ -30,10 +30,10 @@ aside.sidebar
 									li.accordion__item_upper-price
 										label.accordion__label(for="upperPrice") до
 										input.accordion__price(type="text", id="upperPrice", value="30000")
-									.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all
-										.ui-slider-range.ui-widget-header.ui-corner-all#slider
-										span.ui-slider-handle.ui-state-default.ui-corner-all
-										span.ui-slider-handle.ui-state-default.ui-corner-all
+									.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all#slider(data-min="0" data-max="30000")
+										//- .ui-slider-range.ui-widget-header.ui-corner-all
+										//- span.ui-slider-handle.ui-state-default.ui-corner-all
+										//- span.ui-slider-handle.ui-state-default.ui-corner-all
 								if index==3
 									-for(var i=0; i<12; i++)
 										li(class="accordion__color " + "accordion__color_item#{i}")

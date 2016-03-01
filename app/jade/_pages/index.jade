@@ -2,7 +2,7 @@ extends ../main.jade
 block content
 	.products
 		ul.products__list
-			-for(var i=0; i<3; i++)
+			-for(var i=0; i<6; i++)
 				li.products__item
 					.products__image
 						.products__main-img
@@ -13,43 +13,15 @@ block content
 							li.image__item
 								img.products__small-image(src="images/content/big-alc-view1.png", alt="samsung")
 							li.image__item
-								img.products__small-image(src="images/content/big-arch-view1.png", alt="samsung")
+								img.products__small-image(src="images/content/big-high-view1.png", alt="samsung")
 						.products__article
 								span.products__article-text Артикул
 								span.products__article-number 189238
 					.products__content
 						h3.products__header Samsung GT-l9301l GALAXY S3
+						span.products__text Смартфон Samsung GT-l9301l GALAXY S 3
 						p.products__text.
 							Смартфон Samsung GT-l9301l GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
-						.products__rating.clearfix
-							ul.products__list-stars
-								-for(var j=0; j<5; j++)
-									li.products__item-stars
-							.products__rating-number 4
-					.products__info
-						.products__price-wrap
-							span.products__price 11 290
-						.products__purchase
-							button.products__purchase-button В корзину
-							span.products__purchase-text В наличии
-
-	.products.products_grid
-		ul.products__list.products__list_grid
-			-for(var i=0; i<6; i++)
-				li.products__item.products__item_grid
-					.products__image.products__image_grid
-						.products__main-img
-							img.products__main-image(src="images/content/big-sams-view1.png", alt="samsung")
-						ul.image__list
-							li.image__item
-								img.products__small-image(src="images/content/big-sams-view1.png", alt="samsung")
-							li.image__item
-								img.products__small-image(src="images/content/big-alc-view1.png", alt="samsung")
-							li.image__item
-								img.products__small-image(src="images/content/big-arch-view1.png", alt="samsung")
-					.products__content.products__content_grid
-						.products__header-wrap
-							h3.products__header.products__header_grid Samsung GT-l9301l GALAXY S3
 						ul.products__features-list
 							li.products__features-item.clearfix
 								span.products__request Тип SIM карты
@@ -72,30 +44,17 @@ block content
 							li.products__features-item.clearfix
 								span.products__request GPS-модуль
 								span.products__answer Есть
-						.products__rating.products__raiting_grid.clearfix
-							ul.products__list-stars
+						.products__rating.clearfix
+							ul.products__list-stars.clearfix
 								-for(var j=0; j<5; j++)
-									li.products__item-stars.products__item-stars_grid
-							.products__rating-number 4
-					.products__info.products__info_grid
-						.products__price-wrap.products__price-wrap_grid
-							span.products__price.products__price_grid 11 290
-						.products__purchase.products__purchase_grid.clearfix
-							button.products__purchase-button.products__purchase-button_grid В корзину
-							span.products__purchase-text.products__purchase-text_grid В наличии
-
-	.products.products_list-view
-		ul.products__list.products__list_list-view
-			-for(var i=0; i<7; i++)
-				li.products__item.products__item_list-view
-					.products__article.products__article_list-view
-						span.products__article-text.products__article-text_list-view Артикул
-						span.products__article-number.products__articlnumber_list-view 189238
-					.products__content.products__content_list-view
-						span.products__text.products__text_list-view Смартфон Samsung GT-l9301l GALAXY S 3
-					.products__info.products__info_list-view
-						.products__price-wrap.products__price-wrap_list-view
-							span.products__price.products__price_list-view 11 290
-						.products__purchase.products__purchase_list-view.clearfix
-							span.products__purchase-text.products__purchase-text_list-view В наличии
-							button.products__purchase-button.products__purchase-button_list-view В корзину
+									if (j!=4)
+										li.products__item-stars
+									else
+										li.products__item-stars.products__item-stars_unactive
+								li.products__rating-number 4
+					.products__info
+						.products__price-wrap
+							span.products__price 11 290
+						.products__purchase.clearfix
+							button.products__purchase-button В корзину
+							span.products__purchase-text В наличии

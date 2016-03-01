@@ -68,10 +68,10 @@ $urlSprite: '../../images/sprites/';
 	&:before{
 		content: ' ';
 		@include sprite($telephone);
-    display: inline-block;
-    position: relative;
-    top: 3px;
-    right: 5px;
+	    display: inline-block;
+	    position: relative;
+	    top: 3px;
+	    right: 5px;
 	}
 }
 
@@ -81,10 +81,10 @@ $urlSprite: '../../images/sprites/';
 	&:before{
 		content: ' ';
 		@include sprite($map);
-    display: inline-block;
-    position: relative;
-    top: 3px;
-    right: 5px;
+	    display: inline-block;
+	    position: relative;
+	    top: 3px;
+	    right: 5px;
 	}
 }
 .sidebar__item{
@@ -94,47 +94,47 @@ $urlSprite: '../../images/sprites/';
 	&:hover:after{
 		content: ' ';
 		@include sprite($toggle-hide);
-    display: inline-block;
-    position: absolute;
-    top: 20px;
-    right: 13px;
+	    display: inline-block;
+	    position: absolute;
+	    top: 20px;
+	    right: 13px;
 	}
 		&:active{
 			background-color: #d9e5ea;
-			&:after{
-				content: ' ';
-				@include sprite($toggle-show);
-		    display: inline-block;
-		    position: absolute;
-		    top: 20px;
-		    right: 13px;
-			}
 		}
 }
-.select__name{
+.sidebar__name2:hover:after{
+	content: ' ';
+	@include sprite($toggle-show);
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: 13px;
+}
+.select__toggle{
 	position: relative;
 	&:after{
 		content: ' ';
 		@include sprite($small-toggle-show);
-    display: inline-block;
-    position: absolute;
-    top: 38%;
-    right: 6px;
-	}
-	&:active:after{
-		content: ' ';
-		@include sprite($small-toggle-hide);
-    display: inline-block;
-    position: absolute;
-    top: 38%;
-    right: 6px;
+	    display: inline-block;
+	    position: absolute;
+	    top: 38%;
+	    right: 6px;
 	}
 }
+
+.select__toggle2:after{
+	content: ' ';
+	max-width: 333px;
+	@include sprite($small-toggle-hide);
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    right: 6px;
+}
+
 .catalog-view__link_table{
 	@include sprite($table);
-	// margin-left: 16px;
-	// margin-top: 10px;
-	
 	&:hover{
 		@include sprite($table-hover);
 	}
@@ -142,29 +142,23 @@ $urlSprite: '../../images/sprites/';
 		@include sprite($table-hover);
 	}
 }
-.catalog-view__link{
-	// margin-right: 19px;
-	&:first-child{
-
-	}
+.table{
+	@include sprite($table-hover);
 }
 .catalog-view__link_grid{
 	@include sprite($grid);
-	// margin-left: 16px;
-	// margin-top: 10px;
-	
 	&:hover{
 		@include sprite($grid-hover);
 	}
 	&:active{
 		@include sprite($grid-hover);
 	}
+}
+.grid{
+	@include sprite($grid-hover);
 }
 .catalog-view__link_list{
 	@include sprite($list);
-	// margin-left: 16px;
-	// margin-top: 10px;
-	
 	&:hover{
 		@include sprite($list-hover);
 	}
@@ -172,9 +166,9 @@ $urlSprite: '../../images/sprites/';
 		@include sprite($list-hover);
 	}
 }
+.list{
+	@include sprite($list-hover);
+}
 .products__item-stars{
 	@include sprite($star-active);
-	&:last-child{
-		@include sprite($star);
-	}
 }
