@@ -83,7 +83,6 @@ span.products__text{
 }
 .productsHover{
 	border: 1px transparent solid;
-	// overflow: hidden;
 	border: 1px $colorOrange solid;
 }
 
@@ -91,7 +90,6 @@ span.products__text{
 	display: block;
 	max-width: 20px;
   max-height: 26px;
-  // width: 100%;
 }
 .products__article{
 	text-align: center;
@@ -115,8 +113,10 @@ span.products__text{
 	padding-bottom: 40px;
 }
 .products__header{
-	font-size: 16px;
-	font-family: "opensans-bold";
+	font-family: "opensans-semibold";
+	color: #000;
+	font-size: 15px;
+	font-weight: normal;
 	margin-top: 10px;
 	margin-bottom: 32px;
 }
@@ -299,9 +299,12 @@ span.products__text{
 		width: 200px;
 	}
 	.products__header{
-		font-size: 15px;
+		font-family: "opensans-semibold";
+		font-size: 14px;
 		text-align: center;
 		margin-bottom: 3px;
+		min-height: 40px;
+		color: #000; 
 	}
 	.products__raiting{
 		text-align: center;

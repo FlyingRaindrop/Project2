@@ -5,56 +5,43 @@ $urlSprite: '../../images/sprites/';
 // ==========Social icons===========
 .socicons__link{
 	display: block;
+	cursor: pointer;
 }
 .socicons__link_tw{
 	@include sprite($tw);
-	background-position: -15px -42px;
-	margin-left: 4px;
-	margin-top: 6px;
 	&:hover{
 		@include sprite($tw-hover);
 	}
 }
 .socicons__link_fb{
 	@include sprite($fb);
-	margin-left: 9px;
-	margin-top: 6px;
 	&:hover{
 		@include sprite($fb-hover);
 	}
 }
 .socicons__link_vk{
 	@include sprite($vk);
-	margin-left: 9px;
-	margin-top: 7px;
 	&:hover{
 		@include sprite($vk-hover);
 	}
 }
-
 .footer-socicons__link{
 	display: block;
 }
 .footer-socicons__link_tw{
 	@include sprite($tw-footer);
-	margin-left: 9px;
-	margin-top: 10px;
 	&:hover{
 		@include sprite($tw-footer-hover);
 	}
 }
 .footer-socicons__link_fb{
 	@include sprite($fb-footer);
-	margin-left: 16px;
-	margin-top: 10px;
 	&:hover{
 		@include sprite($fb-footer-hover);
 	}
 }
 .footer-socicons__link_vk{
 	@include sprite($vk-footer);
-	margin-left: 14px;
-	margin-top: 10px;
 	&:hover{
 		@include sprite($vk-footer-hover);
 	}

@@ -2158,89 +2158,77 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 .socicons__link {
-  display: block; }
+  display: block;
+  cursor: pointer; }
 
 .socicons__link_tw {
   background-image: url(../../images/sprites/sprite.png);
-  background-position: -16px -42px;
-  width: 16px;
-  height: 12px;
-  background-position: -15px -42px;
-  margin-left: 4px;
-  margin-top: 6px; }
+  background-position: -54px -86px;
+  width: 26px;
+  height: 26px; }
   .socicons__link_tw:hover {
     background-image: url(../../images/sprites/sprite.png);
-    background-position: 0px -42px;
-    width: 16px;
-    height: 12px; }
+    background-position: -129px -26px;
+    width: 26px;
+    height: 26px; }
 
 .socicons__link_fb {
   background-image: url(../../images/sprites/sprite.png);
-  background-position: -43px -21px;
-  width: 6px;
-  height: 12px;
-  margin-left: 9px;
-  margin-top: 6px; }
+  background-position: -80px -86px;
+  width: 26px;
+  height: 26px; }
   .socicons__link_fb:hover {
     background-image: url(../../images/sprites/sprite.png);
-    background-position: -42px -42px;
-    width: 6px;
-    height: 12px; }
+    background-position: -129px 0px;
+    width: 26px;
+    height: 26px; }
 
 .socicons__link_vk {
   background-image: url(../../images/sprites/sprite.png);
-  background-position: -32px -42px;
-  width: 10px;
-  height: 12px;
-  margin-left: 9px;
-  margin-top: 7px; }
+  background-position: -27px -86px;
+  width: 27px;
+  height: 26px; }
   .socicons__link_vk:hover {
     background-image: url(../../images/sprites/sprite.png);
-    background-position: -50px -21px;
-    width: 10px;
-    height: 12px; }
+    background-position: 0px -86px;
+    width: 27px;
+    height: 26px; }
 
 .footer-socicons__link {
   display: block; }
 
 .footer-socicons__link_tw {
   background-image: url(../../images/sprites/sprite.png);
-  background-position: -25px 0px;
-  width: 25px;
-  height: 21px;
-  margin-left: 9px;
-  margin-top: 10px; }
+  background-position: -43px -43px;
+  width: 43px;
+  height: 43px; }
   .footer-socicons__link_tw:hover {
     background-image: url(../../images/sprites/sprite.png);
-    background-position: 0px 0px;
-    width: 25px;
-    height: 21px; }
+    background-position: 0px -43px;
+    width: 43px;
+    height: 43px; }
 
 .footer-socicons__link_fb {
   background-image: url(../../images/sprites/sprite.png);
-  background-position: -50px 0px;
-  width: 11px;
-  height: 21px;
-  margin-left: 16px;
-  margin-top: 10px; }
+  background-position: -86px 0px;
+  width: 43px;
+  height: 43px; }
   .footer-socicons__link_fb:hover {
     background-image: url(../../images/sprites/sprite.png);
-    background-position: -32px -21px;
-    width: 11px;
-    height: 21px; }
+    background-position: 0px 0px;
+    width: 43px;
+    height: 43px; }
 
 .footer-socicons__link_vk {
   background-image: url(../../images/sprites/sprite.png);
-  background-position: 0px -21px;
-  width: 16px;
-  height: 21px;
-  margin-left: 14px;
-  margin-top: 10px; }
+  background-position: -43px 0px;
+  width: 43px;
+  height: 43px; }
   .footer-socicons__link_vk:hover {
     background-image: url(../../images/sprites/sprite.png);
-    background-position: -16px -21px;
-    width: 16px;
-    height: 21px; }
+    background-position: -86px -43px;
+    width: 43px;
+    height: 43px; }
 
 .tel__item {
   text-decoration: none;
@@ -2442,11 +2430,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .socicons__item {
   display: inline-block;
-  margin-right: 17px;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #333333; }
+  margin-right: 17px; }
 
 .address {
   float: right; }
@@ -2592,7 +2576,8 @@ The `sprites` mixin generates identical output to the CSS template
   margin: 0;
   font-size: 20px;
   font-family: "opensans-bold";
-  color: #333333; }
+  color: #333333;
+  font-weight: normal; }
 
 .sidebar {
   float: left; }
@@ -2635,7 +2620,8 @@ The `sprites` mixin generates identical output to the CSS template
   color: #333333;
   font-size: 16px;
   font-family: "opensans-semibold";
-  padding: 14px 30px; }
+  padding: 14px 30px;
+  width: 333px; }
 
 .sidebar__content {
   margin-left: 30px; }
@@ -2812,14 +2798,21 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* Меняем фон чекбокса, когда он включен. */
 .accordion__field_radio:checked + label:before {
-  border: 3px #ff6600 solid;
-  background-image: url(../../images/icons/radio-hover.png);
-  background-position: 2.9px 2.9px;
+  z-index: 4;
+  border: none;
+  background-image: url(../../images/icons/radio-active.png);
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.accordion__field_radio:checked + label:hover:before {
+  border: none;
+  background-image: url(../../images/icons/radio-active.png);
+  background-position: center center;
   background-repeat: no-repeat; }
 
 .accordion__field_radio:not(checked) + label:hover:before {
   background-image: url(../../images/icons/radio-hover.png);
-  background-position: 2.9px 2.9px;
+  background-position: center center;
   background-repeat: no-repeat; }
 
 .accordion__price {
@@ -3091,8 +3084,10 @@ span.products__text {
   padding-bottom: 40px; }
 
 .products__header {
-  font-size: 16px;
-  font-family: "opensans-bold";
+  font-family: "opensans-semibold";
+  color: #000;
+  font-size: 15px;
+  font-weight: normal;
   margin-top: 10px;
   margin-bottom: 32px; }
 
@@ -3254,9 +3249,12 @@ span.products__text {
   .products_grid .products__header-wrap {
     width: 200px; }
   .products_grid .products__header {
-    font-size: 15px;
+    font-family: "opensans-semibold";
+    font-size: 14px;
     text-align: center;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    min-height: 40px;
+    color: #000; }
   .products_grid .products__raiting {
     text-align: center;
     margin: 0 auto; }
@@ -3419,6 +3417,26 @@ span.products__text {
   margin-bottom: 20px;
   margin-top: 0; }
 
+.ie9 .info__text {
+  position: relative; }
+
+.ie9 .info__left {
+  position: absolute;
+  left: 0;
+  width: 543px; }
+
+.ie9 .info__right {
+  position: absolute;
+  right: 0;
+  width: 543px; }
+
+.ie9 .info {
+  padding-bottom: 230px; }
+
+.ie9 .footer {
+  position: relative;
+  bottom: 0; }
+
 .footer {
   background-image: url(../../images/content/bg-footer.png); }
 
@@ -3447,9 +3465,6 @@ span.products__text {
   margin-left: 200px; }
 
 .footer-socicons__item {
-  background-color: #fff;
-  height: 44px;
-  width: 44px;
   margin: 0;
   margin-left: 26px;
   display: inline-block;
@@ -3493,10 +3508,10 @@ li {
 html,
 body {
   height: 100%;
-  min-width: 1100px; }
+  min-width: 1110px; }
 
 .wrapper {
-  min-width: 1100px;
+  min-width: 1110px;
   position: relative;
   min-height: 100%; }
 
@@ -3521,8 +3536,8 @@ body {
   background-color: #f4f4f4; }
 
 .container {
-  max-width: 1100px;
-  min-width: 1100px;
+  max-width: 1110px;
+  min-width: 1110px;
   margin: 0 auto; }
 
 .content {

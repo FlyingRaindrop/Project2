@@ -1,9 +1,12 @@
 doctype html
-html
+html(lang="ru-RU")
 	head
 		include _common/head.jade
 		link(rel="stylesheet", href="css/_layout/style.css") 
 	body
+		//[if IE 9]
+		<div class="ie9">
+		//[endif]
 		.wrapper
 			.page
 				include _common/_mixins.jade

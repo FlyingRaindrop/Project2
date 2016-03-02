@@ -29,3 +29,24 @@
 	margin-bottom: 20px;
 	margin-top: 0;
 }
+
+.ie9 .info__text{
+  position: relative;
+}
+.ie9 .info__left{
+  position: absolute;
+  left: 0;
+  width: 543px;
+}
+.ie9 .info__right{
+  position: absolute;
+  right: 0;
+  width: 543px;
+}
+.ie9 .info{
+  padding-bottom: 230px;
+}
+.ie9 .footer{
+  position: relative;
+  bottom: 0;
+}

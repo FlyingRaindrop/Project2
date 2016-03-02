@@ -23,8 +23,6 @@ gulp.task('default', function(){
     .pipe(rename("bundle.min.css"))
     .pipe(notify("Done!"))
     .pipe(gulp.dest('dist'));
-  // gulp.src('app/scss/**/*.scss')
-  //   .pipe(compass());
 });
 
 // СБОРКА
@@ -97,7 +95,7 @@ gulp.task('compass', function() {
 });
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('app/images/socicons/*.png').pipe(spritesmith({
+  var spriteData = gulp.src('app/images/sociconCircle/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.scss'
   }));

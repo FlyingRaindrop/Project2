@@ -48,6 +48,7 @@ $colorReset: #5db2fc;
 	font-size: 16px;
 	font-family: "opensans-semibold";
 	padding: 14px 30px;
+	width: 333px;
 }
 .sidebar__content{
 	// margin-bottom: 20px;
@@ -207,14 +208,21 @@ $i:0;
 }
 /* Меняем фон чекбокса, когда он включен. */
 .accordion__field_radio:checked + label:before {
-  border: 3px $colorOrange solid;
-  background-image: url(../../images/icons/radio-hover.png);
-  background-position: 2.9px 2.9px;
+  z-index: 4;
+  border: none;
+  background-image: url(../../images/icons/radio-active.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.accordion__field_radio:checked + label:hover:before {
+  border: none;
+  background-image: url(../../images/icons/radio-active.png);
+  background-position: center center;
   background-repeat: no-repeat;
 }
 .accordion__field_radio:not(checked) + label:hover:before{
 	background-image: url(../../images/icons/radio-hover.png);
-	background-position: 2.9px 2.9px;
+	background-position: center center;
   background-repeat: no-repeat;
 }
 .accordion__price{
@@ -256,14 +264,12 @@ $i:0;
 	width: 8px;
 	height: 14px;
 	cursor: pointer;
-	
 }
 .ui-slider-handle{
 	border: 0 none;
 	border: none;
 	background-color: transparent;
 }
-
 *{
 	outline: none;
 }
